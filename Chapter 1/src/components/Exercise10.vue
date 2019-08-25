@@ -47,10 +47,11 @@ li {
 
 a {
   display: inline-block;
-  background: #4fc08d;
+  background: rgb(235, 50, 50);
   border-radius: 10px;
+  font-size: 10px;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 10px;
   text-decoration: none;
 }
 </style>
