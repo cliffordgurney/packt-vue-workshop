@@ -10,9 +10,9 @@ export default {
   data() {
     return {
       title: 'CSS module component!',
-      subtitle: 'Fourth exercise',
+      subtitle: 'The fourth exercise',
     }
-  },
+  }
 }
 </script>
 
@@ -20,14 +20,15 @@ export default {
 h1,
 h2 {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 .title {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
 .subtitle {
-  color: #22cc33;
+  color: #4fc08d;
+  font-style: italic;
 }
 </style>

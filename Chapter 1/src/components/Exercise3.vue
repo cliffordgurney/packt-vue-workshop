@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      title: 'My Third component!',
+      title: 'My list component!',
       subtitle: 'Vue JS basics',
       items: ['Item 1', 'Item 2', 'Item 3'],
     }
@@ -27,6 +27,6 @@ export default {
 
 h1 {
   font-size: 50px;
-  color: #00b98b;
+  color: $color-blue; // Use variables from imported stylesheets
 }
 </style>
