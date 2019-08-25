@@ -12,7 +12,7 @@ export default {
       title: 'CSS module component!',
       subtitle: 'The fourth exercise',
     }
-  }
+  },
 }
 </script>
 

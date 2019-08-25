@@ -2,11 +2,11 @@ import { shallowMount } from '@vue/test-utils'
 import Exercise from '@/components/Exercise2A.vue'
 
 describe('Exercise2A.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
+  it('renders props.title when passed', () => {
+    const title = 'My first component!'
     const wrapper = shallowMount(Exercise, {
-      propsData: { msg },
+      propsData: { title },
     })
-    expect(wrapper.text()).toMatch(msg)
+    expect(wrapper.text()).toMatch(title)
   })
 })

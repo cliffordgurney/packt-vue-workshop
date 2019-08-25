@@ -32,13 +32,15 @@
       <div :class="$style.formGroup">
         <h3>Experience:</h3>
 
-        <div
-          v-for="(item, n) in form.experience"
-          :key="`expPreview${n}`"
-          :class="$style.preview"
-        >
-          {{ formatPreview(item) }}
-          <button @click="deleteItem('experience', n)">Delete</button>
+        <div>
+          <div
+            v-for="(item, n) in form.experience"
+            :key="`expPreview${n}`"
+            :class="$style.preview"
+          >
+            {{ formatPreview(item) }}
+            <button @click="deleteItem('experience', n)">Delete</button>
+          </div>
         </div>
         <div :class="$style.fieldset">
           <label>
@@ -70,13 +72,15 @@
 
       <div :class="$style.formGroup">
         <h3>Education:</h3>
-        <div
-          v-for="(item, n) in form.education"
-          :key="`eduPreview${n}`"
-          :class="$style.preview"
-        >
-          {{ formatPreview(item) }}
-          <button @click="deleteItem('education', n)">Delete</button>
+        <div>
+          <div
+            v-for="(item, n) in form.education"
+            :key="`eduPreview${n}`"
+            :class="$style.preview"
+          >
+            {{ formatPreview(item) }}
+            <button @click="deleteItem('education', n)">Delete</button>
+          </div>
         </div>
         <div :class="$style.fieldset">
           <label>

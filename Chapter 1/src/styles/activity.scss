@@ -176,6 +176,9 @@ small {
 
   +.preview {
     border-top: 0;
+  }
+
+  &:last-child {
     margin-bottom: 10px;
   }
 }
