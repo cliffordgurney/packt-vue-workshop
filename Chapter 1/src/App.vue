@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Exercise from './components/Exercise8'
+import Exercise from './components/Exercise10'
 
 export default {
   components: {
