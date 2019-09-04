@@ -4,15 +4,26 @@ import Exercise from '@/components/Exercise6B.vue'
 describe('Exercise6B.vue', () => {
   const wrapper = shallowMount(Exercise, {})
 
-  it('hidden elements to not be rendered', () => {
+  it('data returns correctly in list element', () => {
     const name = 'John Doe'
+    const language = 'Javascript'
+
     wrapper.setData({
       name: name,
+      language: language,
     })
 
-    // wrapper.find('input').setValue(name)
-
-    expect(wrapper.find('input').text()).toEqual('')
-    // expect(wrapper.find('h2')).toEqual({})
+    expect(
+      wrapper
+        .findAll('.overview li')
+        .at(1)
+        .text()
+    ).toEqual('Name: ' + name)
+    expect(
+      wrapper
+        .findAll('.overview li')
+        .at(2)
+        .text()
+    ).toEqual('Preference: ' + language)
   })
 })
